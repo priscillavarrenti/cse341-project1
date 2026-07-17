@@ -1,3 +1,15 @@
 GET http://localhost:3000/contacts
 ###
 GET http://localhost:3000/contacts/6a4c186512887c174e94908e
+
+###
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Maria",
+  "lastName": "Lopez",
+  "email": "maria@gmail.com",
+  "favoriteColor": "Red",
+  "birthday": "1999-01-01"
+}
