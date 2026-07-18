@@ -51,7 +51,7 @@ const createContact = async (req, res) => {
       id: response.insertedId
     });
   } catch (err) {
-    res.status(500).json(response.error || 'Some error ocurred while updating the user.');
+    res.status(500).json(err);
   }
 }
 

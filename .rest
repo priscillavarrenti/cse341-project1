@@ -13,3 +13,18 @@ Content-Type: application/json
   "favoriteColor": "Red",
   "birthday": "1999-01-01"
 }
+
+###
+PUT http://localhost:3000/contacts/6a5bf78e115d8715c02b1986
+Content-Type: application/json
+
+{
+  "firstName": "Maria",
+  "lastName": "Lopez",
+  "email": "maria@gmail.com",
+  "favoriteColor": "Blue",
+  "birthday": "1999-01-01"
+}
+
+###
+DELETE http://localhost:3000/contacts/6a5bf78e115d8715c02b1986

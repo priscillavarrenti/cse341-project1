@@ -8,11 +8,20 @@
   "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https",
     "http"
   ],
   "paths": {
     "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contacts/": {
       "get": {
         "description": "",
         "responses": {
@@ -62,7 +71,7 @@
         }
       }
     },
-    "/{id}": {
+    "/contacts/{id}": {
       "get": {
         "description": "",
         "parameters": [
@@ -147,6 +156,16 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
